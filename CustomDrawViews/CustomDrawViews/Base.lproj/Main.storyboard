@@ -20,7 +20,24 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ebd-lB-Xmg" customClass="DrawView" customModule="CustomDrawViews" customModuleProvider="target">
+                                <rect key="frame" x="37" y="133.5" width="300" height="400"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="dPR-k7-keR"/>
+                                    <constraint firstAttribute="height" constant="400" id="v9v-UN-xvV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="icon" value="catIcon"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ebd-lB-Xmg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JwE-zB-HMZ"/>
+                            <constraint firstItem="Ebd-lB-Xmg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSA-Mo-0Dk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

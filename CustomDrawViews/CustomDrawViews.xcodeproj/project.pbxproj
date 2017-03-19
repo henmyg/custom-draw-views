@@ -13,6 +13,9 @@
 		B523FDA01E7872290045BADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B523FD9E1E7872290045BADF /* LaunchScreen.storyboard */; };
 		B523FDAB1E7872290045BADF /* CustomDrawViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B523FDAA1E7872290045BADF /* CustomDrawViewsTests.swift */; };
 		B523FDB71E787B330045BADF /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B523FDB61E787B330045BADF /* NibView.swift */; };
+		B523FDBA1E7885E30045BADF /* PaintCodeAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B523FDB91E7885E30045BADF /* PaintCodeAssets.swift */; };
+		B523FDBC1E78860D0045BADF /* PaintCodeAssets+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B523FDBB1E78860D0045BADF /* PaintCodeAssets+Extensions.swift */; };
+		B54AB9681E7F130E0089FBA4 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54AB9671E7F130E0089FBA4 /* DrawView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		B523FDAA1E7872290045BADF /* CustomDrawViewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDrawViewsTests.swift; sourceTree = "<group>"; };
 		B523FDAC1E7872290045BADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B523FDB61E787B330045BADF /* NibView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NibView.swift; path = View/NibView.swift; sourceTree = "<group>"; };
+		B523FDB91E7885E30045BADF /* PaintCodeAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PaintCodeAssets.swift; path = Resources/PaintCodeAssets.swift; sourceTree = "<group>"; };
+		B523FDBB1E78860D0045BADF /* PaintCodeAssets+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PaintCodeAssets+Extensions.swift"; path = "Resources/PaintCodeAssets+Extensions.swift"; sourceTree = "<group>"; };
+		B54AB9671E7F130E0089FBA4 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawView.swift; path = View/DrawView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,10 @@
 			isa = PBXGroup;
 			children = (
 				B523FDB51E787B110045BADF /* View */,
+				B523FDB81E7885780045BADF /* Resources */,
 				B523FD951E7872290045BADF /* AppDelegate.swift */,
 				B523FD991E7872290045BADF /* Main.storyboard */,
-				B523FD9C1E7872290045BADF /* Assets.xcassets */,
 				B523FD9E1E7872290045BADF /* LaunchScreen.storyboard */,
-				B523FDA11E7872290045BADF /* Info.plist */,
 			);
 			path = CustomDrawViews;
 			sourceTree = "<group>";
@@ -100,8 +105,20 @@
 			isa = PBXGroup;
 			children = (
 				B523FDB61E787B330045BADF /* NibView.swift */,
+				B54AB9671E7F130E0089FBA4 /* DrawView.swift */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		B523FDB81E7885780045BADF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B523FD9C1E7872290045BADF /* Assets.xcassets */,
+				B523FDA11E7872290045BADF /* Info.plist */,
+				B523FDB91E7885E30045BADF /* PaintCodeAssets.swift */,
+				B523FDBB1E78860D0045BADF /* PaintCodeAssets+Extensions.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B523FDBC1E78860D0045BADF /* PaintCodeAssets+Extensions.swift in Sources */,
+				B54AB9681E7F130E0089FBA4 /* DrawView.swift in Sources */,
+				B523FDBA1E7885E30045BADF /* PaintCodeAssets.swift in Sources */,
 				B523FDB71E787B330045BADF /* NibView.swift in Sources */,
 				B523FD961E7872290045BADF /* AppDelegate.swift in Sources */,
 			);
